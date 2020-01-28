@@ -8,16 +8,28 @@ p{
     margin-bottom: 10px;
 }
 
+ul{
+    list-style-type: none;
+}
+
 input{
     border-radius: 5px;
+    padding: 2px;
     box-shadow: none;
     border: none;
+}
+
+.error{
+    color: #a84a32;
+    font-weight: bold;
+    display: none;
 }
 
 button{
     padding: 3px;
     background-color: #FF7F50;
     border-radius: 3px;
+    margin: 5px;
 }
 
 html {
@@ -30,6 +42,11 @@ html {
 
   #resultat{
       background-color: rgba(0,0,0,0.3);
+      border-radius: 15px;
+      padding: 10px;
+      width: 40%;
+      margin: auto;
+      display: none;
   }
 
   .contenu{
