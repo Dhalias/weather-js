@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input{
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+
+button{
+    padding: 3px;
+    background-color: #FF7F50;
+    border-radius: 3px;
+}
+
+html {
+    background: url(meteoBackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+
+  #resultat{
+      background-color: rgba(0,0,0,0.3);
+  }
+
+  .contenu{
+      margin-top: 5%;
+      text-align: center;
+  }
