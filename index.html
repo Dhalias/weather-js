@@ -12,16 +12,62 @@
             <div class="contenu">
 				<h2>Bienvenue sur le projet météo !</h2>
                 <p>Vous n'avez qu'à entrer le nom d'une ville dans la case ci-dessous afin d'obtenir diverses informations.</p>
-                <input id="cityNameInput"/><br/>
+                <input id="cityNameInput" required/><br/>
                 <button id="getInfo">Obtenir informations</button>
-
+                <div class="error" id="errorMsg">
+                    ** Vous devez entrer le nom d'une ville avant de pouvoir obtenir les informations. **
+                </div>
                 <div id="resultat">
-                    <p>Les résultats météorologiques pour la ville de </p>
+                    <p>Les résultats météorologiques pour la ville de  <span id="cityName" class="bold"></span></p>
+                    <table>
+                        <tr>
+                            <td  class="table-header bold" colspan="2">Informations météorologiques</td>
+                        </tr>
+
+                        <tr>
+                            <td>Température actuelle :</td>
+                            <td><span id="cityTemp"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Pression atmosphérique :</td>
+                            <td><span id="cityPressure"></span> hPa</td>
+                        </tr>
+
+                        <tr>
+                            <td>Humidité :</td>
+                            <td><span id="cityHumidity"></span> %</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vent :</td>
+                            <td><span id="cityWind"></span> m/s</td>
+                        </tr>
+
+                        <tr>
+                            <td class="table-header bold" colspan="2">Informations géographiques</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pays :</td>
+                            <td><span id="cityCountry"></span> </td>
+                        </tr>
+
+                        <tr>
+                            <td>Longitute :</td>
+                            <td><span id="cityLong"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Latitude :</td>
+                            <td><span id="cityLat"></span></td>
+                        </tr>
+
+                    </table>
                 </div>
 			</div>
         </div>
-        <p id="test"></p>
     </body>
-
+    <script src="script/countrycode.js"></script>
     <script src="script/onload.js"></script>
 </html>

@@ -12,6 +12,10 @@ ul{
     list-style-type: none;
 }
 
+table{
+    margin: auto;
+}
+
 input{
     border-radius: 5px;
     padding: 2px;
@@ -41,15 +45,30 @@ html {
   }
 
   #resultat{
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0,0,0,0.45);
       border-radius: 15px;
       padding: 10px;
-      width: 40%;
+      width: fit-content;
       margin: auto;
       display: none;
+      color: navajowhite;
+  }
+
+  .bold{
+      font-weight: bold;
   }
 
   .contenu{
       margin-top: 5%;
       text-align: center;
   }
+
+  .table-header{
+      margin-bottom: 5px;
+      margin-top: 5px;
+  }
+
+  td span { 
+    text-align: right;
+    padding-left: 10px;
+} 
